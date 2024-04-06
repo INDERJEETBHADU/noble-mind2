@@ -1,38 +1,290 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ol,
+ul {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.cursor_pointer {
+  cursor: pointer;
+}
+
+:root {
+  --fs-sm: 14px;
+  --fs-md: 15px;
+  --fs-lg: 20px;
+  --fs-xl: 33px;
+  --fs-2xl: 33px;
+  /* color-here */
+  --color-liteblack: #131200;
+  --color-litewhite: #fdfdff;
+  --color-grey: #5A594D;
+  --color-pencil:#B8B7B5;
+  --color-litegrey: #4d4d4d;
+}
+
+.text-14 {
+  font-size: var(--fs-sm);
+}
+
+.text-16 {
+  font-size: var(--fs-md);
+}
+
+.text-20 {
+  font-size: var(--fs-lg);
+}
+
+.text-48 {
+  font-size: var(--fs-xl);
+}
+
+.text-64 {
+  font-size: var(--fs-2xl);
+}
+
+.color-liteblack {
+  color: var(--color-liteblack);
+}
+
+.color-litewhite {
+  color: var(--color-litewhite);
+}
+
+.color-grey {
+  color: var(--color-grey);
+}
+.color-pencil {
+  color: var(--color-pencil);
+}
+
+.color-grey {
+  color: var(--color-litegrey);
+}
+
+
+.lh-24 {
+  line-height: 22px;
+}
+
+.lh-70 {
+  line-height: 70.4px;
+}
+
+.lh-76 {
+  line-height: 50.8px;
+}
+
+.lh-57 {
+  line-height: 44.6px;
+}
+
+.lh-25 {
+  line-height: 25.2px;
+}
+
+.lh-21 {
+  line-height: 21px;
+}
+
+.opacity-7 {
+  opacity: 70%;
+}
+
+.font-exo2 {
+  font-family: "Exo 2", sans-serif;
+}
+
+.font-monst {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+@media (min-width:576px) {
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 44px;
+    --fs-2xl: 48px;
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-70 {
+    line-height: 70.4px;
+  }
+
+  .lh-76 {
+    line-height: 60.8px;
+  }
+
+  .lh-57 {
+    line-height: 57.6px;
+  }
+
+  .lh-25 {
+    line-height: 25.2px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+}
+
+@media (min-width:768px) {
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 48px;
+    --fs-2xl: 64px;
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-70 {
+    line-height: 70.4px;
+  }
+
+  .lh-76 {
+    line-height: 76.8px;
+  }
+
+  .lh-57 {
+    line-height: 57.6px;
+  }
+
+  .lh-25 {
+    line-height: 25.2px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+}
+
+@media (min-width:992px) {
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 40px;
+    --fs-2xl: 64px;
+
+
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-70 {
+    line-height: 70.4px;
+  }
+
+  .lh-76 {
+    line-height: 76.8px;
+  }
+
+  .lh-57 {
+    line-height: 57.6px;
+  }
+
+  .lh-25 {
+    line-height: 25.2px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+}
+
+@media (min-width:1024px) {
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 48px;
+    --fs-2xl: 64px;
+
+
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-70 {
+    line-height: 70.4px;
+  }
+
+  .lh-76 {
+    line-height: 76.8px;
+  }
+
+  .lh-57 {
+    line-height: 57.6px;
+  }
+
+  .lh-25 {
+    line-height: 25.2px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width:1200px) {
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 20px;
+    --fs-xl: 48px;
+    --fs-2xl: 64px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .lh-24 {
+    line-height: 24px;
   }
+
+  .lh-70 {
+    line-height: 70.4px;
+  }
+
+  .lh-76 {
+    line-height: 76.8px;
+  }
+
+  .lh-57 {
+    line-height: 57.6px;
+  }
+
+  .lh-25 {
+    line-height: 25.2px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
 }
