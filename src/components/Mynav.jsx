@@ -4,9 +4,9 @@ import logo_nav from "../assets/SVG/logo.svg";
 function Mynav() {
   const [show, setfirst] = useState(false);
   if (show === true) {
-    document.body.classList.add("overflow-hidden");
+    document.body.classList.add("overflow_hidden");
   } else {
-    document.body.classList.remove("overflow-hidden");
+    document.body.classList.remove("overflow_hidden");
   }
   return (
     <>

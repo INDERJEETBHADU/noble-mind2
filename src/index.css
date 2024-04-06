@@ -332,6 +332,7 @@ textarea {
     padding-bottom: 14px;
     border: 1px solid #FDFDFF;
     border-radius: 4px;
+    transition: 300ms linear;
 }
 
 .subscribe_btn:hover {
@@ -477,6 +478,10 @@ textarea {
 @media (max-width:992px) {
     .slick-current .centric_box {
         border-bottom: 5px solid #A854E9;
+    }
+
+    .overflow_hidden {
+        overflow: hidden !important;
     }
 
     .menu span:nth-child(1) {
